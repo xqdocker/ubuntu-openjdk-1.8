@@ -4,8 +4,10 @@ MAINTAINER xqdocker <xqdocker@xq-cao.com>
 #Install Open JDK 8
 
 RUN apt-get update
+
 RUN apt-get -y install software-properties-common
 RUN add-apt-repository -y ppa:openjdk-r/ppa
+RUN apt-get update
 
 RUN apt-get -y install openjdk-8-jdk
 
